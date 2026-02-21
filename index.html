@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <a href="landing.html">
+    <button class="back-btn">⬅ Back</button>
+  </a>
+
+  <button onclick="toggleDark()" class="dark-btn"> Dark</button>
+</div>
+
+<div class="container">
+
+  <div class="left">
+    <h1>💰 Budget Tracker</h1>
+
+    <input type="number" id="incomeInput" placeholder="Enter income amount">
+    <input type="date" name="" id="date">
+    <button onclick="addIncome()" class="income">Add Income</button>
+
+    <input type="text" id="expenseName" placeholder="Enter expense name">
+    <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+    <input type="date" name="" id="date2">
+    <button onclick="addExpense()" class="expense">Add Expense</button>
+
+    <h3>Transaction History</h3>
+    <ul id="list"></ul>
+
+    <h2 id="balance">Balance: 0</h2>
+  </div>
+
+  <div class="right">
+    <img src="/image/20945937.jpg">
+  </div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
