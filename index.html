@@ -3,45 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Budget Tracker</title>
+<title>Budget Tracker - Landing</title>
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
+
 <div class="top-bar">
-  <a href="landing.html">
-    <button class="back-btn">⬅ Back</button>
-  </a>
-
-  <button onclick="toggleDark()" class="dark-btn"> Dark</button>
+  <h2>💰 Budget Tracker</h2>
+  <button onclick="toggleDark()" class="dark-btn"> Dark Mode</button>
 </div>
 
-<div class="container">
 
-  <div class="left">
-    <h1>💰 Budget Tracker</h1>
+<section class="hero">
 
-    <input type="number" id="incomeInput" placeholder="Enter income amount">
-    <input type="date" name="" id="date">
-    <button onclick="addIncome()" class="income">Add Income</button>
+  <div class="text">
+    <h1>Take Control of Your Money</h1>
 
-    <input type="text" id="expenseName" placeholder="Enter expense name">
-    <input type="number" id="expenseAmount" placeholder="Enter expense amount">
-    <input type="date" name="" id="date2">
-    <button onclick="addExpense()" class="expense">Add Expense</button>
+    <p>
+      Budget Tracker helps you monitor your income, control expenses,
+      and understand your financial habits with a simple and clean interface.
+    </p>
 
-    <h3>Transaction History</h3>
-    <ul id="list"></ul>
+    <p>
+      Start tracking today and make smarter financial decisions for your future.
+    </p>
 
-    <h2 id="balance">Balance: 0</h2>
+    <a href="trackers.html">
+      <button class="start-btn"> Get Started</button>
+    </a>
   </div>
 
-  <div class="right">
-    <img src="/image/20945937.jpg">
+  <div class="image">
+    <img src="image/20945937.jpg">
   </div>
 
-</div>
+</section>
 
 <script src="index.js"></script>
+
 </body>
 </html>
